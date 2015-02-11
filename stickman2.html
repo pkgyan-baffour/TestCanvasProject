@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Stick People</title>
+
 <style>#canvas {background-color: yellow;}</style>
+<!-- use an external stylesheet -->
+
 <script type="text/javascript">
+
 window.addEventListener('load', eventWindowLoaded, false);	
 function eventWindowLoaded() {
 
@@ -28,7 +32,8 @@ function canvasApp(){
   	}
 	
 	
-	drawScreen(); 
+	drawScreen(); // function call to draw stickman
+
     function drawLine (a, b, c, d) {
         context.beginPath();
         context.moveTo(a,b);
@@ -61,7 +66,6 @@ function canvasApp(){
         context.strokeStyle = "pink"; 
         context.lineWidth=4;	  
     	}
-
 
         drawLine(350,150,350,300);
         drawLine(350,250,400,300);
