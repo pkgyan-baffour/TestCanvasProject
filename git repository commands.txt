@@ -9,3 +9,9 @@ git push -u origin master
 push an existing repository from the command line
 git remote add origin https://github.com/UclanCreativeProgramming/TestCanvasProject.git
 git push -u origin master
+
+Pushing an update
+
+git add *
+git commit -m "comment"
+git push %repo https%
