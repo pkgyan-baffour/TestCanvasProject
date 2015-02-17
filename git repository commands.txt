@@ -26,3 +26,9 @@ git config --global http.proxy http://proxy.uclan.ac.uk:3128
 
 Comitting deleted files//
 git add -u
+
+Storing your username and password//
+git config credential.helper store
+
+Then just push as usual, it will ask for your username and password
+Next time it will not ask for your details
