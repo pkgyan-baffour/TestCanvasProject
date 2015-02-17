@@ -16,7 +16,7 @@ git commit -m "comment"
 git push <repository name/url>
 
 Create an alias for a repository//
-git remote <name> <url>
+git remote add "<name>" <url>
 
 Resolve crlf error//
 git config --global core.autoclrf false
