@@ -34,6 +34,9 @@ git config credential.helper store
 Then just push as usual, it will ask for your username and password
 Next time it will not ask for your details
 
-
 Lists files that your repository is currently tracking//
 git ls-files
+
+This will be useful for when things go... not so well... it'll happen//
+git blame <fileName>
+It tells you who made changes to a specified file so you can easily find out who messed up, fun!
