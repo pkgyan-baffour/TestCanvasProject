@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stick People</title>
+
+<style>#canvas {background-color: yellow;}</style>
+<!-- use an external stylesheet -->
+
+<script type="text/javascript">
+
+window.addEventListener('load', eventWindowLoaded, false);	
+function eventWindowLoaded() {
+
+	canvasApp();
+	
+}
+
+// Just a comment by me - Mark
+
+function canvasApp(){
+
+	var theCanvas = document.getElementById('canvas');
+  	if (!theCanvas || !theCanvas.getContext) {
+    		return;
+  	}
+  
+  	var context = theCanvas.getContext('2d');
+ 	
+	if (!context) {
+   	 	return; // no context , no go
+  	}
+	
+	
+	drawScreen(); // function call to draw stickman
+
+    function drawLine (a, b, c, d) {
+        context.beginPath();
+        context.moveTo(a,b);
+        context.lineTo(c,d);
+        context.stroke();
+      }
+
+	function drawScreen() {
+		
+    	//stick man
+        context.strokeStyle = "blue"; 
+        context.lineWidth=4;
+    	
+        drawLine(150,150,150,350);
+        drawLine(150,250,200,300);
+        drawLine(150,250,100,300);
+        drawLine(150,350,200,450);
+        drawLine(150,350,100,450);
+
+        //head
+        context.beginPath();
+        context.arc(150, 100, 50, (Math.PI/180)*0, (Math.PI/180)*360, false); // full circle
+        context.stroke();
+        context.closePath();
+        context.fillStyle="blue"
+        context.fill()
+
+
+      //stick woman 
+        context.strokeStyle = "pink"; 
+        context.lineWidth=4;	  
+    	}
+
+        drawLine(350,150,350,300);
+        drawLine(350,250,400,300);
+        drawLine(350,250,300,300);
+        drawLine(350,300,300,400);
+        drawLine(350,300,400,400);
+        drawLine(400,400,300,400);
+        drawLine(340,400,310,450);
+        drawLine(360,400,390,450);
+         //head
+        context.beginPath();
+        context.arc(350, 100, 50, (Math.PI/180)*0, (Math.PI/180)*360, false); // full circle
+        context.stroke();
+        context.closePath();
+        context.fillStyle="pink"
+        context.fill()
+      }
+
+
+</script> 
+</head>
+<body>
+<div style="position: absolute; top: 50px; left: 50px;">
+<canvas id="canvas" width="500" height="500">
+ Your browser does not support the HTML 5 Canvas.........
+</canvas>
+</div>
+</body>
+</html>
