@@ -1,4 +1,4 @@
-create a new repository on the command line
+Create a new repository on the command line//
 echo "# TestCanvasProject" >> README.md
 git init
 git add README.md
@@ -6,6 +6,23 @@ git commit -m "first commit"
 git remote add origin https://github.com/UclanCreativeProgramming/TestCanvasProject.git
 git push -u origin master
 
-push an existing repository from the command line
+Push an existing repository from the command line//
 git remote add origin https://github.com/UclanCreativeProgramming/TestCanvasProject.git
 git push -u origin master
+
+Pushing an update//
+git add *
+git commit -m "comment"
+git push <repository name/url>
+
+Create an alias for a repository//
+git remote <name> <url>
+
+Resolve crlf error//
+git config --global core.autoclrf false
+
+Setting the proxy//
+git config --global http.proxy http://proxy.uclan.ac.uk:3128
+
+Comitting deleted files//
+git add -u
