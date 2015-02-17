@@ -32,3 +32,6 @@ git config credential.helper store
 
 Then just push as usual, it will ask for your username and password
 Next time it will not ask for your details
+
+git ls-files
+This shows all of the files that your repository is currently tracking
