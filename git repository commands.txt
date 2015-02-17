@@ -24,6 +24,6 @@ git config --global core.autoclrf false
 Setting the proxy//
 git config --global http.proxy http://proxy.uclan.ac.uk:3128
 
-Comitting a manully deleted file//
-git rm <filename>
+Comitting deleted files//
+git add -u
 
