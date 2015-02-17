@@ -22,6 +22,7 @@ Resolve crlf error//
 git config --global core.autoclrf false
 
 Setting the proxy//
+Only needed from uclan desktop PCs//
 git config --global http.proxy http://proxy.uclan.ac.uk:3128
 
 Comitting deleted files//
@@ -33,5 +34,6 @@ git config credential.helper store
 Then just push as usual, it will ask for your username and password
 Next time it will not ask for your details
 
+
+Lists files that your repository is currently tracking//
 git ls-files
-This shows all of the files that your repository is currently tracking
