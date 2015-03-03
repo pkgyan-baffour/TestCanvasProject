@@ -1,3 +1,30 @@
+Constantly updating list of config and setup commands//
+Your Username and Email Address
+git config --global user.name "<Your Name>"
+git config --global user.email "<Your Email>"
+
+Necessary core setup//
+git config --global core.autocrlf false
+git config --global core.safecrlf true
+
+Setting up the proxy//
+Only needed on Uni computers//
+git config --global http.proxy http://proxy.uclan.ac.uk:3128
+
+Storing your username and password//
+After adding this, push as usual, it will ask for your username and password//
+Next time it will not ask for your details
+git config credential.helper store
+
+For mac users//
+Globally ignoring .DS_Store files//
+git config --global core.excludesfile ~/.gitignore
+echo .DS_Store >> ~/.gitignore
+
+Create an alias for a repository//
+Use this alias instead of the url on push for ease//
+git remote add "<name>" <url>
+
 Create a new repository on the command line//
 echo "# TestCanvasProject" >> README.md
 git init
@@ -15,24 +42,8 @@ git add *
 git commit -m "comment"
 git push <repository name/url>
 
-Create an alias for a repository//
-git remote add "<name>" <url>
-
-Resolve crlf error//
-git config --global core.autoclrf false
-
-Setting the proxy//
-Only needed from uclan desktop PCs//
-git config --global http.proxy http://proxy.uclan.ac.uk:3128
-
 Comitting deleted files//
 git add -u
-
-Storing your username and password//
-git config credential.helper store
-
-Then just push as usual, it will ask for your username and password
-Next time it will not ask for your details
 
 Lists files that your repository is currently tracking//
 git ls-files
@@ -44,4 +55,4 @@ It tells you who made changes to a specified file so you can easily find out who
 Pull from your local directory, useful for when you make an error, delete a file for example//
 git checkout “<filename>”
 of for checking out all files//
-git checkout —— .
+git checkout -- .
