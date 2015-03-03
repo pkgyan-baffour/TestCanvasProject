@@ -16,6 +16,9 @@ After adding this, push as usual, it will ask for your username and password//
 Next time it will not ask for your details
 git config credential.helper store
 
+Reduce push error, setting a default for pushing//
+git config --global push.default simple
+
 For mac users//
 Globally ignoring .DS_Store files//
 git config --global core.excludesfile ~/.gitignore
