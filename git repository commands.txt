@@ -55,4 +55,8 @@ It tells you who made changes to a specified file so you can easily find out who
 Pull from your local directory, useful for when you make an error, delete a file for example//
 git checkout “<filename>”
 of for checking out all files//
+<<<<<<< HEAD
 git checkout -- .
+=======
+git checkout -- .
+>>>>>>> fb9a8738f79ac4a67b54f5dd346d07ac0da9e45b
