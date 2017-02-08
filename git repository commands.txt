@@ -46,7 +46,9 @@
 	git remote add "<repository name>" <url>
 	git push -u <repository name/url> master
 
-
+	#if you get an non-fas t-forward error
+	git push --force <remote_repository>
+	
 	#Create an alias for a remote repository (GitHub, BitBucket etc.)
 	#Use this alias instead of the url on push for ease
 	git remote add "<repository name>" <url>
